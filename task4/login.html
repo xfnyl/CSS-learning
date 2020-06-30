@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>登录</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #eff0f4;
+		}
+		input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+			outline-color: none;
+			color: #eaedee;
+			font-size: 0.9rem;
+		}
+		.header {
+			width: 100%;
+			height: 44px;
+			padding-top: 14px;
+			background-color: #5fc0cd;
+			font-size: 1rem;
+			color: white;
+		}
+		.header .close {
+			float: left;
+			margin-left: 16px;
+		}
+		.header .login_in {
+			text-align: center;
+			font-size: 1.05rem;
+		}
+		.header .regi {
+			float: right;
+			margin-right: 16px;
+		}
+		.header .close a {
+			color: white;
+			text-decoration: none;
+		}
+		.header .regi a {
+			color: white;
+			text-decoration: none;
+		}
+		.ph_numb {
+			display: flex;
+			width: 100%;
+			height: 60px;
+			margin-top: 15px;
+			background-color: white;
+		}
+		.ph_numb .icon {
+			float: left;
+			margin: 14px 20px;
+		}
+		.ph_numb .line {
+			float: left;
+			width: 2px;
+			height: 32px;
+			margin-top: 14px;
+			background-color: #eaedee;
+		}
+		.ph_numb input {
+			width: 100%;
+			height: 54px;
+			padding-left: 20px;
+			border: none;
+			font-size: 0.9rem;
+			color: black;
+		}
+		.passwd {
+			display: flex;
+			width: 100%;
+			height: 60px;
+			margin-top: 15px;
+			background-color: white;
+		}
+		.passwd .icon {
+			float: left;
+			margin: 14px 20px;
+		}
+		.passwd .line {
+			float: left;
+			width: 2px;
+			height: 32px;
+			margin-top: 14px;
+			background-color: #eaedee;
+		}
+		.passwd input {
+			width: 100%;
+			height: 54px;
+			padding-left: 20px;
+			border: none;
+			font-size: 0.9rem;
+			color: black;
+		}
+		.btn button {
+			width: 100%;
+			height: 60px;
+			margin-top: 15px;
+			background-color: #5fc0cd;
+			border: 0;
+			color: white;
+			font-size: 1.05rem;
+		}
+		.chpasswd {
+			float: right;
+			margin: 12px;
+			color: #5fc0cd;
+			font-size: 0.8rem;
+		}
+		.chpasswd a {
+			color: #5fc0cd;
+		}
+	</style>
+</head>
+<body>
+	<!--header部分-->
+	<div class="header">
+		<div class="close">
+			<a href="#">关闭</a>
+		</div>
+		<div class="regi">
+			<a href="#">注册</a>
+		</div>
+		<div class="login_in">
+			登录
+		</div>
+	</div>
+	<!--header部分-->
+	<!--input部分-->
+	<div class="ph_numb">
+		<div class="icon">
+			<img src="images/iphone.png" alt="">
+		</div>
+		<div class="line">
+		</div>
+		<input type="tel" placeholder="请输入手机号" oninput="if(value.length>11)value=value.slice(0,11)" />
+	</div>
+	<div class="passwd">
+		<div class="icon">
+			<img src="images/lock.png" alt="">
+		</div>
+		<div class="line">
+		</div>
+		<input type="password" placeholder="请输入密码" maxlength="20"/>
+	</div>
+	<!--input部分-->
+	<!--button部分-->
+	<div class="btn">
+		<button>登&emsp;录</button>
+	</div>
+	<!--button部分-->
+	<div class="chpasswd">
+		<a href="#">忘记密码？</a>
+	</div>
+</body>
+</html>
